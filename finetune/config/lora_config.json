@@ -1,0 +1,60 @@
+{
+  "base_model": "D:\\Model",
+  "lora": {
+    "r": 16,
+    "lora_alpha": 32,
+    "lora_dropout": 0.05,
+    "target_modules": "all-linear",
+    "task_type": "CAUSAL_LM"
+  },
+  "quantization": {
+    "load_in_4bit": true,
+    "bnb_4bit_quant_type": "nf4",
+    "bnb_4bit_use_double_quant": true,
+    "bnb_4bit_compute_dtype": "bfloat16"
+  },
+  "training": {
+    "num_train_epochs": 3,
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 16,
+    "learning_rate": 2e-4,
+    "lr_scheduler_type": "cosine",
+    "warmup_ratio": 0.05,
+    "max_length": 768,
+    "gradient_checkpointing": true,
+    "optim": "adamw_8bit",
+    "logging_steps": 10,
+    "save_strategy": "epoch",
+    "bf16": true,
+    "attn_implementation": "eager"
+  },
+  "data": {
+    "train_file": "finetune/data/train.jsonl",
+    "seeds_file": "finetune/data/seeds.json",
+    "npc_config": "npc_config.json",
+    "chroma_db": "rag/chroma_db",
+    "embed_model": "D:\\Model\\embedding",
+    "eval_ratio": 0.02
+  },
+  "output": {
+    "lora_adapter": "finetune/output/lora_adapter",
+    "checkpoint_dir": "finetune/output/ckpt",
+    "merged_model": "finetune/output/merged_model",
+    "log_file": "finetune/logs/train.log"
+  },
+  "sample_composition": {
+    "persona_base": 1500,
+    "rag_knowledge": 1500,
+    "refusal": 500,
+    "greeting": 400,
+    "player_memory": 300,
+    "jailbreak": 150,
+    "pure_dialogue": 750,
+    "rag_weak": 250,
+    "no_hit_fallback": 150,
+    "adv_offtopic": 300,
+    "adv_benign": 150,
+    "adv_cross_char": 300,
+    "total_target": 6250
+  }
+}

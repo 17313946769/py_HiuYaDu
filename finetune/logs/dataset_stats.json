@@ -1,0 +1,20 @@
+{
+  "total": 6224,
+  "types": {
+    "persona_base": 1500,
+    "rag_original": 750,
+    "rag_paraphrase": 750,
+    "refusal": 495,
+    "greeting": 390,
+    "player_memory": 300,
+    "jailbreak": 150,
+    "pure_dialogue": 750,
+    "rag_weak": 240,
+    "no_hit_fallback": 150,
+    "adv_offtopic": 300,
+    "adv_benign": 150,
+    "adv_cross_char": 299
+  },
+  "declared": 6250,
+  "total_target": 6250
+}

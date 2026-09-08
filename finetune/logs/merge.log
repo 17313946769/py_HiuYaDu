@@ -1,0 +1,70 @@
+[2026-09-08 20:34:48] ==================================================================
+[2026-09-08 20:34:48] 灰鸦渡 LoRA 合并（步骤 5/6）
+[2026-09-08 20:34:48] ==================================================================
+[2026-09-08 20:34:48] [路径] 基座   : D:\Model
+[2026-09-08 20:34:48] [路径] adapter: D:\py_HiuYaDu\finetune\output\lora_adapter
+[2026-09-08 20:34:48] [路径] 输出   : D:\py_HiuYaDu\finetune\output\merged_model
+[2026-09-08 20:34:48] [参数] dtype=bfloat16  device=CPU (CUDA_VISIBLE_DEVICES='')
+[2026-09-08 20:34:48] [adapter] r=16 alpha=32 target=['q_proj', 'down_proj', 'o_proj', 'k_proj', 'v_proj', 'gate_proj', 'up_proj'] base=D:\Model
+[2026-09-08 20:34:48] [预检] 基座权重约 5.75GB (bfloat16)，含余量需约 7.76GB 可用内存
+[2026-09-08 20:34:48] [预检] 当前内存: 可用 4.67GB / 总量 15.71GB
+[2026-09-08 20:34:48] [预检] 内存不足（需 7.76GB，仅 4.67GB）。
+[2026-09-08 20:34:48] [预检] 最可能的原因是训练进程仍在运行并占用内存。
+[2026-09-08 20:34:48] [预检] 请等训练结束后重试；确认无训练进程可查：Get-Process python
+[2026-09-08 20:36:11] ==================================================================
+[2026-09-08 20:36:11] 灰鸦渡 LoRA 合并（步骤 5/6）
+[2026-09-08 20:36:11] ==================================================================
+[2026-09-08 20:36:11] [路径] 基座   : D:\Model
+[2026-09-08 20:36:11] [路径] adapter: D:\py_HiuYaDu\finetune\output\lora_adapter
+[2026-09-08 20:36:11] [路径] 输出   : D:\py_HiuYaDu\finetune\output\merged_model
+[2026-09-08 20:36:11] [参数] dtype=bfloat16  device=CPU (CUDA_VISIBLE_DEVICES='')
+[2026-09-08 20:36:11] [adapter] r=16 alpha=32 target=['q_proj', 'down_proj', 'o_proj', 'k_proj', 'v_proj', 'gate_proj', 'up_proj'] base=D:\Model
+[2026-09-08 20:36:11] [错误] 输出目录已存在: D:\py_HiuYaDu\finetune\output\merged_model
+[2026-09-08 20:36:11] [提示] 加 --force 覆盖，或用 --out 指定其他目录
+[2026-09-08 20:38:38] ==================================================================
+[2026-09-08 20:38:38] 灰鸦渡 LoRA 合并（步骤 5/6）
+[2026-09-08 20:38:38] ==================================================================
+[2026-09-08 20:38:38] [路径] 基座   : D:\Model
+[2026-09-08 20:38:38] [路径] adapter: D:\py_HiuYaDu\finetune\output\lora_adapter
+[2026-09-08 20:38:38] [路径] 输出   : D:\py_HiuYaDu\finetune\output\merged_model
+[2026-09-08 20:38:38] [参数] dtype=bfloat16  device=CPU (CUDA_VISIBLE_DEVICES='')
+[2026-09-08 20:38:38] [adapter] r=16 alpha=32 target=['q_proj', 'down_proj', 'o_proj', 'k_proj', 'v_proj', 'gate_proj', 'up_proj'] base=D:\Model
+[2026-09-08 20:38:38] [输出] --force：删除已存在的 D:\py_HiuYaDu\finetune\output\merged_model
+[2026-09-08 20:38:38] [预检] 基座权重约 5.75GB (bfloat16)，含余量需约 7.76GB 可用内存
+[2026-09-08 20:38:38] [预检] 当前内存: 可用 6.19GB / 总量 15.71GB
+[2026-09-08 20:38:38] [预检] 内存不足（需 7.76GB，仅 6.19GB）。
+[2026-09-08 20:38:38] [预检] 最可能的原因是训练进程仍在运行并占用内存。
+[2026-09-08 20:38:38] [预检] 请等训练结束后重试；确认无训练进程可查：Get-Process python
+[2026-09-08 20:40:23] ==================================================================
+[2026-09-08 20:40:23] 灰鸦渡 LoRA 合并（步骤 5/6）
+[2026-09-08 20:40:23] ==================================================================
+[2026-09-08 20:40:23] [路径] 基座   : D:\Model
+[2026-09-08 20:40:23] [路径] adapter: D:\py_HiuYaDu\finetune\output\lora_adapter
+[2026-09-08 20:40:23] [路径] 输出   : D:\py_HiuYaDu\finetune\output\merged_model
+[2026-09-08 20:40:23] [参数] dtype=bfloat16  device=CPU (CUDA_VISIBLE_DEVICES='')
+[2026-09-08 20:40:23] [adapter] r=16 alpha=32 target=['q_proj', 'down_proj', 'o_proj', 'k_proj', 'v_proj', 'gate_proj', 'up_proj'] base=D:\Model
+[2026-09-08 20:40:23] [输出] --force：删除已存在的 D:\py_HiuYaDu\finetune\output\merged_model
+[2026-09-08 20:40:23] [预检] 基座权重约 5.75GB (bfloat16)，含余量需约 7.76GB 可用内存
+[2026-09-08 20:40:23] [预检] 当前内存: 可用 6.33GB / 总量 15.71GB
+[2026-09-08 20:40:23] [预检] 使用 --min-free-gb 覆盖阈值: 5.80GB
+[2026-09-08 20:40:23] [预检] 磁盘可用 56.0GB，通过
+[2026-09-08 20:40:33] [加载] 以 bfloat16 在 CPU 上加载基座（low_cpu_mem_usage 避免双份内存）
+[2026-09-08 20:40:34] [加载] 基座就绪，耗时 1s
+[2026-09-08 20:40:34] [加载] 加载后剩余内存 5.43GB
+[2026-09-08 20:40:34] [合并] 挂载 adapter: D:\py_HiuYaDu\finetune\output\lora_adapter
+[2026-09-08 20:40:35] [合并] 探针层 base_model.model.model.layers.0.self_attn.q_proj: sum=-47.215759 norm=74.853050
+[2026-09-08 20:40:45] [合并] merge_and_unload 完成，耗时 10s
+[2026-09-08 20:40:45] [警告] 合并后找不到探针层 base_model.model.model.layers.0.self_attn.q_proj，无法校验；请人工确认输出
+[2026-09-08 20:40:45] [保存] 写出 Safetensors 到 D:\py_HiuYaDu\finetune\output\merged_model
+[2026-09-08 20:40:52] [保存] 完成，耗时 7s
+[2026-09-08 20:40:53] ------------------------------------------------------------------
+[2026-09-08 20:40:53] [产物] chat_template.jinja                              0.0 MB
+[2026-09-08 20:40:53] [产物] config.json                                      0.0 MB
+[2026-09-08 20:40:53] [产物] generation_config.json                           0.0 MB
+[2026-09-08 20:40:53] [产物] model.safetensors                             5886.0 MB
+[2026-09-08 20:40:53] [产物] tokenizer.json                                  10.9 MB
+[2026-09-08 20:40:53] [产物] tokenizer_config.json                            0.0 MB
+[2026-09-08 20:40:53] ------------------------------------------------------------------
+[2026-09-08 20:40:53] [产物] 合计 5.76 GB，目录: D:\py_HiuYaDu\finetune\output\merged_model
+[2026-09-08 20:40:53] [产物] config.json: arch=['Qwen2ForCausalLM'] dtype=bfloat16 quantization_config=无(正确)
+[2026-09-08 20:40:53] [下一步] 运行 python finetune/scripts/test_finetune.py 做回归测试（步骤 6/6）

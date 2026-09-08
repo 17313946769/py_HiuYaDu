@@ -1,0 +1,60 @@
+# ============================================================
+# 模型权重与训练产物 —— GitHub 单文件硬限 100MB，以下全部超限
+# ============================================================
+# finetune/output/ 实测 8.2GB：merged_model/model.safetensors 5886MB、
+# ckpt 11 个存档约 2GB（每个 adapter 114MB + optimizer 61MB）、
+# lora_adapter/adapter_model.safetensors 114MB、_smoke/adapter 114MB。
+# 这些都能由 train.py + merge_lora.py 从代码复现；而一旦误入 commit 历史，
+# 清除需要重写整个历史（filter-repo / BFG），代价远高于事先排除。
+finetune/output/
+
+# 旧路线的 GGUF 成品（1840MB）。独立微调路线已决策只出 Safetensors、不导 GGUF。
+*.gguf
+
+# 权重与优化器状态的通用兜底，防止将来新增产物漏网
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# 但 ChromaDB 的 HNSW 索引恰恰以 .bin 存储（data_level0 / header / length /
+# link_lists），一并排除会让向量库只剩 chroma.sqlite3 而残缺不可用。
+# 且 build_kb.py 的 5 份设定文档在仓库外的本地路径，clone 后无法重建，
+# 所以这个向量库必须完整入库。
+!rag/chroma_db/**/*.bin
+
+# ============================================================
+# 数据集冗余快照 —— 当前生效版本是 train.jsonl（4.6MB，已入库）
+# ============================================================
+finetune/data/train_prev_backup.jsonl
+
+# ============================================================
+# Python 缓存与虚拟环境
+# ============================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+env/
+
+# ============================================================
+# IDE 与编辑器
+# ============================================================
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ============================================================
+# 系统文件
+# ============================================================
+Thumbs.db
+Desktop.ini
+.DS_Store

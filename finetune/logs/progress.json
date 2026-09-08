@@ -1,0 +1,25 @@
+{
+  "status": "finished",
+  "step": 1146,
+  "total_steps": 1146,
+  "epoch": 3.0,
+  "elapsed_sec": 53992.8,
+  "eval_history": [
+    {
+      "epoch": 1.0,
+      "step": 382,
+      "eval_loss": 0.0886
+    },
+    {
+      "epoch": 2.0,
+      "step": 764,
+      "eval_loss": 0.0545
+    },
+    {
+      "epoch": 3.0,
+      "step": 1146,
+      "eval_loss": 0.0493
+    }
+  ],
+  "updated_at": "2026-09-08 20:13:25"
+}
